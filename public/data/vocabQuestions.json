@@ -1,1 +1,167 @@
-[]
+[
+  {
+    "id": "v1",
+    "question": "What does \"benevolent\" mean?",
+    "choices": [
+      "Kind and generous",
+      "Extremely angry",
+      "Highly intelligent",
+      "Very tired"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "v2",
+    "question": "Choose the best synonym for \"ambiguous\".",
+    "choices": [
+      "Clear",
+      "Unclear",
+      "Loud",
+      "Fast"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "v3",
+    "question": "What is the meaning of \"candid\"?",
+    "choices": [
+      "Frank and honest",
+      "Secretive",
+      "Colorful",
+      "Delayed"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "v4",
+    "question": "\"Diligent\" most nearly means:",
+    "choices": [
+      "Lazy",
+      "Careless",
+      "Hardworking",
+      "Confused"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "v5",
+    "question": "What does \"eloquent\" describe?",
+    "choices": [
+      "Fluent and persuasive speech",
+      "Silent behavior",
+      "Poor handwriting",
+      "Slow walking"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "v6",
+    "question": "Choose the antonym of \"frugal\".",
+    "choices": [
+      "Thrifty",
+      "Wasteful",
+      "Cheap",
+      "Modest"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "v7",
+    "question": "What does \"gregarious\" mean?",
+    "choices": [
+      "Sociable and outgoing",
+      "Shy and withdrawn",
+      "Angry",
+      "Forgetful"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "v8",
+    "question": "\"Hostile\" most nearly means:",
+    "choices": [
+      "Friendly",
+      "Unfriendly or aggressive",
+      "Calm",
+      "Curious"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "v9",
+    "question": "What does \"immense\" mean?",
+    "choices": [
+      "Very small",
+      "Very large",
+      "Very quiet",
+      "Very slow"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "v10",
+    "question": "Choose the best synonym for \"jubilant\".",
+    "choices": [
+      "Sad",
+      "Joyful",
+      "Tired",
+      "Nervous"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "v11",
+    "question": "What does \"lethargic\" describe?",
+    "choices": [
+      "Full of energy",
+      "Sluggish and tired",
+      "Very smart",
+      "Very kind"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "v12",
+    "question": "\"Meticulous\" most nearly means:",
+    "choices": [
+      "Careless",
+      "Very careful and precise",
+      "Fast",
+      "Loud"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "v13",
+    "question": "What does \"notorious\" mean?",
+    "choices": [
+      "Famous for something good",
+      "Famous for something bad",
+      "Unknown",
+      "Wealthy"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "v14",
+    "question": "Choose the antonym of \"optimistic\".",
+    "choices": [
+      "Hopeful",
+      "Positive",
+      "Pessimistic",
+      "Cheerful"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "v15",
+    "question": "What does \"pragmatic\" mean?",
+    "choices": [
+      "Dealing with things practically",
+      "Overly emotional",
+      "Extremely shy",
+      "Dishonest"
+    ],
+    "answer": 0
+  }
+]
