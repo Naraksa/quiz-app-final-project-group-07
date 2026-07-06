@@ -1,0 +1,121 @@
+.page-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.difficulty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.back-btn-wrapper {
+  width: 100%;
+  text-align: left;
+}
+
+.header-wrapper {
+  text-align: center;
+}
+
+.header-wrapper > * + * {
+  margin-top: 0.5rem;
+}
+
+.greeting-text {
+  color: rgb(196, 181, 253); /* violet-300 / 400 */
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title-text {
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.subtitle-text {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  font-family: 'Inter', sans-serif;
+}
+
+.difficulty-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Base card styling */
+.difficulty-card {
+  width: 100%;
+  text-align: left;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.difficulty-card:hover {
+  transform: scale(1.01);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.card-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-left-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-emoji {
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.card-label {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.card-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card-description {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  font-family: 'Inter', sans-serif;
+}

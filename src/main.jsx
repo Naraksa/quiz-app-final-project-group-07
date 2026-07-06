@@ -4,6 +4,8 @@ import { RouterProvider } from 'react-router-dom'
 import { QuizProvider } from './context/QuizContext.jsx'
 import { router } from './route/AppRoute.jsx'
 import './index.css'
+// Both: added theme.css 
+import './theme.css'
 
 // The power switch: wrap the whole app in the whiteboard (QuizProvider) and
 // the receptionist (RouterProvider), then turn everything on.
