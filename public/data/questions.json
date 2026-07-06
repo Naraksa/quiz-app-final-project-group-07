@@ -1,0 +1,44 @@
+{
+  "difficulties": [
+    {
+      "id": "easy",
+      "label": "Easy",
+      "emoji": "🌱",
+      "description": "Warm up your brain with some friendly, beginner-level questions."
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "emoji": "⚡",
+      "description": "A balanced step up. Testing your core knowledge and logic."
+    },
+    {
+      "id": "hard",
+      "label": "Hard",
+      "emoji": "💀",
+      "description": "Brutal. Intended for seasoned pros looking for a real challenge."
+    }
+  ],
+  "rules": [
+    {
+      "title": "30 Questions Total",
+      "body": "15 vocabulary questions followed by 15 grammar questions.",
+      "icon": "📋"
+    },
+    {
+      "title": "Multiple Choice",
+      "body": "Each question has 4 choices — only one is correct.",
+      "icon": "🔤"
+    },
+    {
+      "title": "One Chance",
+      "body": "Select your answers on each page, then submit to move on.",
+      "icon": "🎯"
+    },
+    {
+      "title": "Scoring",
+      "body": "Each correct answer earns 1 point. Max score is 30.",
+      "icon": "🏆"
+    }
+  ]
+}
