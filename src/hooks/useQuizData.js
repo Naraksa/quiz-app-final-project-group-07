@@ -1,6 +1,3 @@
-// Role B (Data) — useQuizData.js
-// Fetches vocab/grammar questions from public/data based on a "vocab" | "grammar"
-// argument. Returns { questions, status }.
 import { useState, useEffect } from "react";
 import { QUIZ_TYPES, FETCH_STATUS } from "../utils/constants";
 
@@ -9,7 +6,7 @@ const FILE_MAP = {
   [QUIZ_TYPES.GRAMMAR]: "/data/grammarQuestions.json",
 };
 
-export function useQuizData(quizType) {
+export function useQuizData(quizType, difficulty) {
   const [questions, setQuestions] = useState([]);
   const [status, setStatus] = useState(FETCH_STATUS.LOADING);
 
@@ -34,7 +31,10 @@ export function useQuizData(quizType) {
       })
       .then((data) => {
         if (isCancelled) return;
-        setQuestions(data);
+        const filtered = difficulty
+          ? data.filter((q) => q.difficulty === difficulty)
+          : data;
+        setQuestions(filtered);
         setStatus(FETCH_STATUS.SUCCESS);
       })
       .catch(() => {
@@ -46,7 +46,7 @@ export function useQuizData(quizType) {
     return () => {
       isCancelled = true;
     };
-  }, [quizType]);
+  }, [quizType, difficulty]); // difficulty added to dep array — refetch/refilter on change
 
   return { questions, status };
 }

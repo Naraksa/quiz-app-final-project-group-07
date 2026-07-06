@@ -1,6 +1,186 @@
 [
   {
-    "id": "v1",
+    "id": "ve1",
+    "question": "What does \"happy\" mean?",
+    "choices": [
+      "Sad",
+      "Feeling joy or pleasure",
+      "Angry",
+      "Tired"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve2",
+    "question": "Choose the best synonym for \"big\".",
+    "choices": [
+      "Small",
+      "Large",
+      "Thin",
+      "Quiet"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve3",
+    "question": "What is the meaning of \"quick\"?",
+    "choices": [
+      "Slow",
+      "Fast",
+      "Heavy",
+      "Old"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve4",
+    "question": "\"Angry\" most nearly means:",
+    "choices": [
+      "Calm",
+      "Mad or upset",
+      "Happy",
+      "Sleepy"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve5",
+    "question": "What does \"beautiful\" describe?",
+    "choices": [
+      "Something ugly",
+      "Something pleasing to look at",
+      "Something loud",
+      "Something broken"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve6",
+    "question": "Choose the antonym of \"hot\".",
+    "choices": [
+      "Warm",
+      "Cold",
+      "Bright",
+      "Wet"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve7",
+    "question": "What does \"brave\" mean?",
+    "choices": [
+      "Fearful",
+      "Showing courage",
+      "Weak",
+      "Shy"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve8",
+    "question": "\"Difficult\" most nearly means:",
+    "choices": [
+      "Easy",
+      "Hard to do",
+      "Simple",
+      "Fun"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve9",
+    "question": "What does \"tiny\" mean?",
+    "choices": [
+      "Very large",
+      "Very small",
+      "Very loud",
+      "Very fast"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve10",
+    "question": "Choose the best synonym for \"begin\".",
+    "choices": [
+      "End",
+      "Start",
+      "Stop",
+      "Pause"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve11",
+    "question": "What does \"clean\" describe?",
+    "choices": [
+      "Dirty",
+      "Free from dirt",
+      "Broken",
+      "Loud"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve12",
+    "question": "\"Strong\" most nearly means:",
+    "choices": [
+      "Weak",
+      "Having great power",
+      "Small",
+      "Slow"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve13",
+    "question": "What does \"funny\" mean?",
+    "choices": [
+      "Sad",
+      "Causing laughter",
+      "Boring",
+      "Serious"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve14",
+    "question": "Choose the antonym of \"early\".",
+    "choices": [
+      "Soon",
+      "Late",
+      "Fast",
+      "Quick"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ve15",
+    "question": "What does \"kind\" mean?",
+    "choices": [
+      "Cruel",
+      "Friendly and caring",
+      "Angry",
+      "Lazy"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "vm1",
     "question": "What does \"benevolent\" mean?",
     "choices": [
       "Kind and generous",
@@ -8,10 +188,11 @@
       "Highly intelligent",
       "Very tired"
     ],
-    "answer": 0
+    "answer": 0,
+    "difficulty": "medium"
   },
   {
-    "id": "v2",
+    "id": "vm2",
     "question": "Choose the best synonym for \"ambiguous\".",
     "choices": [
       "Clear",
@@ -19,10 +200,11 @@
       "Loud",
       "Fast"
     ],
-    "answer": 1
+    "answer": 1,
+    "difficulty": "medium"
   },
   {
-    "id": "v3",
+    "id": "vm3",
     "question": "What is the meaning of \"candid\"?",
     "choices": [
       "Frank and honest",
@@ -30,10 +212,11 @@
       "Colorful",
       "Delayed"
     ],
-    "answer": 0
+    "answer": 0,
+    "difficulty": "medium"
   },
   {
-    "id": "v4",
+    "id": "vm4",
     "question": "\"Diligent\" most nearly means:",
     "choices": [
       "Lazy",
@@ -41,10 +224,11 @@
       "Hardworking",
       "Confused"
     ],
-    "answer": 2
+    "answer": 2,
+    "difficulty": "medium"
   },
   {
-    "id": "v5",
+    "id": "vm5",
     "question": "What does \"eloquent\" describe?",
     "choices": [
       "Fluent and persuasive speech",
@@ -52,10 +236,11 @@
       "Poor handwriting",
       "Slow walking"
     ],
-    "answer": 0
+    "answer": 0,
+    "difficulty": "medium"
   },
   {
-    "id": "v6",
+    "id": "vm6",
     "question": "Choose the antonym of \"frugal\".",
     "choices": [
       "Thrifty",
@@ -63,10 +248,11 @@
       "Cheap",
       "Modest"
     ],
-    "answer": 1
+    "answer": 1,
+    "difficulty": "medium"
   },
   {
-    "id": "v7",
+    "id": "vm7",
     "question": "What does \"gregarious\" mean?",
     "choices": [
       "Sociable and outgoing",
@@ -74,10 +260,11 @@
       "Angry",
       "Forgetful"
     ],
-    "answer": 0
+    "answer": 0,
+    "difficulty": "medium"
   },
   {
-    "id": "v8",
+    "id": "vm8",
     "question": "\"Hostile\" most nearly means:",
     "choices": [
       "Friendly",
@@ -85,10 +272,11 @@
       "Calm",
       "Curious"
     ],
-    "answer": 1
+    "answer": 1,
+    "difficulty": "medium"
   },
   {
-    "id": "v9",
+    "id": "vm9",
     "question": "What does \"immense\" mean?",
     "choices": [
       "Very small",
@@ -96,10 +284,11 @@
       "Very quiet",
       "Very slow"
     ],
-    "answer": 1
+    "answer": 1,
+    "difficulty": "medium"
   },
   {
-    "id": "v10",
+    "id": "vm10",
     "question": "Choose the best synonym for \"jubilant\".",
     "choices": [
       "Sad",
@@ -107,10 +296,11 @@
       "Tired",
       "Nervous"
     ],
-    "answer": 1
+    "answer": 1,
+    "difficulty": "medium"
   },
   {
-    "id": "v11",
+    "id": "vm11",
     "question": "What does \"lethargic\" describe?",
     "choices": [
       "Full of energy",
@@ -118,10 +308,11 @@
       "Very smart",
       "Very kind"
     ],
-    "answer": 1
+    "answer": 1,
+    "difficulty": "medium"
   },
   {
-    "id": "v12",
+    "id": "vm12",
     "question": "\"Meticulous\" most nearly means:",
     "choices": [
       "Careless",
@@ -129,10 +320,11 @@
       "Fast",
       "Loud"
     ],
-    "answer": 1
+    "answer": 1,
+    "difficulty": "medium"
   },
   {
-    "id": "v13",
+    "id": "vm13",
     "question": "What does \"notorious\" mean?",
     "choices": [
       "Famous for something good",
@@ -140,10 +332,11 @@
       "Unknown",
       "Wealthy"
     ],
-    "answer": 1
+    "answer": 1,
+    "difficulty": "medium"
   },
   {
-    "id": "v14",
+    "id": "vm14",
     "question": "Choose the antonym of \"optimistic\".",
     "choices": [
       "Hopeful",
@@ -151,10 +344,11 @@
       "Pessimistic",
       "Cheerful"
     ],
-    "answer": 2
+    "answer": 2,
+    "difficulty": "medium"
   },
   {
-    "id": "v15",
+    "id": "vm15",
     "question": "What does \"pragmatic\" mean?",
     "choices": [
       "Dealing with things practically",
@@ -162,6 +356,187 @@
       "Extremely shy",
       "Dishonest"
     ],
-    "answer": 0
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": "vh1",
+    "question": "What does \"ubiquitous\" mean?",
+    "choices": [
+      "Rare and hard to find",
+      "Present everywhere",
+      "Extremely old",
+      "Very quiet"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh2",
+    "question": "Choose the best synonym for \"ephemeral\".",
+    "choices": [
+      "Permanent",
+      "Short-lived",
+      "Enormous",
+      "Predictable"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh3",
+    "question": "What is the meaning of \"obsequious\"?",
+    "choices": [
+      "Excessively eager to please",
+      "Rudely dismissive",
+      "Highly confident",
+      "Deeply confused"
+    ],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh4",
+    "question": "\"Cacophony\" most nearly means:",
+    "choices": [
+      "A harsh mixture of sounds",
+      "A pleasant melody",
+      "Complete silence",
+      "A type of dance"
+    ],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh5",
+    "question": "What does \"pernicious\" describe?",
+    "choices": [
+      "Something harmful in a gradual way",
+      "Something beneficial",
+      "Something loud",
+      "Something colorful"
+    ],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh6",
+    "question": "Choose the antonym of \"taciturn\".",
+    "choices": [
+      "Reserved",
+      "Talkative",
+      "Silent",
+      "Withdrawn"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh7",
+    "question": "What does \"sycophant\" mean?",
+    "choices": [
+      "A person who flatters others for personal gain",
+      "A brave leader",
+      "A skilled artist",
+      "A shy student"
+    ],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh8",
+    "question": "\"Recalcitrant\" most nearly means:",
+    "choices": [
+      "Cooperative",
+      "Stubbornly resistant to authority",
+      "Cheerful",
+      "Forgetful"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh9",
+    "question": "What does \"equivocate\" mean?",
+    "choices": [
+      "To speak clearly and directly",
+      "To use ambiguous language to avoid commitment",
+      "To calculate precisely",
+      "To celebrate loudly"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh10",
+    "question": "Choose the best synonym for \"vindicate\".",
+    "choices": [
+      "To clear from blame",
+      "To accuse falsely",
+      "To punish severely",
+      "To ignore completely"
+    ],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh11",
+    "question": "What does \"capricious\" describe?",
+    "choices": [
+      "Predictable and steady",
+      "Prone to sudden, unpredictable changes",
+      "Extremely generous",
+      "Highly organized"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh12",
+    "question": "\"Assiduous\" most nearly means:",
+    "choices": [
+      "Lazy and careless",
+      "Showing great care and perseverance",
+      "Quick-tempered",
+      "Extremely wealthy"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh13",
+    "question": "What does \"perfunctory\" mean?",
+    "choices": [
+      "Done with genuine care and effort",
+      "Done as a routine duty without real interest",
+      "Extremely thorough",
+      "Highly emotional"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh14",
+    "question": "Choose the antonym of \"succinct\".",
+    "choices": [
+      "Brief",
+      "Verbose",
+      "Clear",
+      "Direct"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "vh15",
+    "question": "What does \"ameliorate\" mean?",
+    "choices": [
+      "To make something worse",
+      "To make something better",
+      "To ignore a problem",
+      "To duplicate something"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
   }
 ]
