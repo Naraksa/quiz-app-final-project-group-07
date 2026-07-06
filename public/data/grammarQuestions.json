@@ -1,154 +1,542 @@
 [
   {
-    "id": "g1",
+    "id": "ge1",
     "question": "Choose the correct sentence.",
     "choices": [
-        "She don't like coffee.",
-        "She doesn't likes coffee.", 
-        "She doesn't like coffee.", 
-        "She not like coffee."
-        ],
-    "answer": 2
+      "She don't like coffee.",
+      "She doesn't likes coffee.",
+      "She doesn't like coffee.",
+      "She not like coffee."
+    ],
+    "answer": 2,
+    "difficulty": "easy"
   },
   {
-    "id": "g2",
+    "id": "ge2",
     "question": "Which sentence uses the correct verb tense?",
     "choices": [
-        "I have went to the store.", 
-        "I have gone to the store.", 
-        "I has gone to the store.", 
-        "I go went to the store."
-        ],
-    "answer": 1
+      "I have went to the store.",
+      "I have gone to the store.",
+      "I has gone to the store.",
+      "I go went to the store."
+    ],
+    "answer": 1,
+    "difficulty": "easy"
   },
   {
-    "id": "g3",
+    "id": "ge3",
     "question": "Identify the correctly punctuated sentence.",
-    "choices": ["Its raining outside.", 
-                "It's raining outside.", 
-                "Its' raining outside.", 
-                "Its raining, outside."
-                ],
-    "answer": 1
+    "choices": [
+      "Its raining outside.",
+      "It's raining outside.",
+      "Its' raining outside.",
+      "Its raining, outside."
+    ],
+    "answer": 1,
+    "difficulty": "easy"
   },
   {
-    "id": "g4",
+    "id": "ge4",
     "question": "Choose the sentence with correct subject-verb agreement.",
-    "choices": ["The team are winning.", 
-                "The team is winning.", 
-                "The team am winning.", 
-                "The team be winning."
-                ],
-    "answer": 1
+    "choices": [
+      "The team are winning.",
+      "The team is winning.",
+      "The team am winning.",
+      "The team be winning."
+    ],
+    "answer": 1,
+    "difficulty": "easy"
   },
   {
-    "id": "g5",
+    "id": "ge5",
     "question": "Which sentence uses the correct pronoun?",
-    "choices": ["Me and him went to the park.", 
-                "Him and I went to the park.", 
-                "He and I went to the park.", 
-                "Him and me went to the park."
-                ],
-    "answer": 2
+    "choices": [
+      "Me and him went to the park.",
+      "Him and I went to the park.",
+      "He and I went to the park.",
+      "Him and me went to the park."
+    ],
+    "answer": 2,
+    "difficulty": "easy"
   },
   {
-    "id": "g6",
-    "question": "Choose the correctly structured sentence.",
-    "choices": ["Running quickly, the bus was caught by her.", 
-                "She caught the bus running quickly.", 
-                "Running quickly, she caught the bus.", 
-                "The bus, running quickly, she caught."
-                ],
-    "answer": 2
-  },
-  {
-    "id": "g7",
-    "question": "Which sentence is punctuated correctly?",
-    "choices": ["I bought apples oranges and bananas.", 
-                "I bought apples, oranges, and bananas.", 
-                "I bought, apples oranges and bananas.", 
-                "I bought apples oranges, and bananas."
-                ],
-    "answer": 1
-  },
-  {
-    "id": "g8",
+    "id": "ge6",
     "question": "Choose the sentence with correct word usage.",
-    "choices": ["Your going to love this movie.", 
-                "You're going to love this movie.", 
-                "Ur going to love this movie.", 
-                "Yore going to love this movie."
-                ],
-    "answer": 1
+    "choices": [
+      "Your going to love this movie.",
+      "You're going to love this movie.",
+      "Ur going to love this movie.",
+      "Yore going to love this movie."
+    ],
+    "answer": 1,
+    "difficulty": "easy"
   },
   {
-    "id": "g9",
+    "id": "ge7",
     "question": "Which sentence uses the correct comparative form?",
-    "choices": ["This book is more better than that one.", 
-                "This book is gooder than that one.", 
-                "This book is better than that one.", 
-                "This book is best than that one."
-                ],
-    "answer": 2
+    "choices": [
+      "This book is more better than that one.",
+      "This book is gooder than that one.",
+      "This book is better than that one.",
+      "This book is best than that one."
+    ],
+    "answer": 2,
+    "difficulty": "easy"
   },
   {
-    "id": "g10",
+    "id": "ge8",
     "question": "Choose the sentence with correct apostrophe usage.",
-    "choices": ["The dogs bone was buried.", 
-                "The dog's bone was buried.", 
-                "The dogs' bone was buried, when it has one dog.", 
-                "The dogs bone's was buried."
-            ],
-    "answer": 1
+    "choices": [
+      "The dogs bone was buried.",
+      "The dog's bone was buried.",
+      "The dogs' bone was buried, when it has one dog.",
+      "The dogs bone's was buried."
+    ],
+    "answer": 1,
+    "difficulty": "easy"
   },
   {
-    "id": "g11",
-    "question": "Which sentence avoids a dangling modifier?",
-    "choices": ["Walking to school, the rain started falling.", 
-                "Walking to school, I got caught in the rain.", 
-                "The rain, walking to school, started falling.", 
-                "Walking to school started the rain."
-                ],
-    "answer": 1
-  },
-  {
-    "id": "g12",
-    "question": "Choose the sentence with correct conjunction usage.",
-    "choices": ["I wanted to go, but it was raining.", 
-                "I wanted to go but, it was raining.", 
-                "I wanted to go, but, it was raining.", 
-                "I wanted to go but it, was raining."
-                ],
-    "answer": 0
-  },
-  {
-    "id": "g13",
-    "question": "Which sentence correctly uses a semicolon?",
-    "choices": ["I like tea; and coffee.", 
-                "I like tea; I also like coffee.", 
-                "I like tea, I also like coffee;", 
-                "I like tea I also; like coffee."
-                ],
-    "answer": 1
-  },
-  {
-    "id": "g14",
+    "id": "ge9",
     "question": "Choose the sentence with correct capitalization.",
-    "choices": ["we visited paris in the Spring.", 
-                "We visited Paris in the spring.", 
-                "We Visited paris in the spring.", 
-                "We visited paris in the Spring."
-                ],
-    "answer": 1
+    "choices": [
+      "we visited paris in the Spring.",
+      "We visited Paris in the spring.",
+      "We Visited paris in the spring.",
+      "We visited paris in the Spring."
+    ],
+    "answer": 1,
+    "difficulty": "easy"
   },
   {
-    "id": "g15",
+    "id": "ge10",
+    "question": "Which sentence is correct?",
+    "choices": [
+      "He don't know the answer.",
+      "He doesn't knows the answer.",
+      "He doesn't know the answer.",
+      "He not know the answer."
+    ],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ge11",
+    "question": "Choose the correctly formed plural.",
+    "choices": [
+      "I have two childs.",
+      "I have two children.",
+      "I have two childrens.",
+      "I have two child."
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ge12",
+    "question": "Which sentence uses the correct article?",
+    "choices": [
+      "She bought a apple.",
+      "She bought an apple.",
+      "She bought the a apple.",
+      "She bought apple."
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ge13",
+    "question": "Choose the sentence with correct verb form.",
+    "choices": [
+      "They was happy.",
+      "They were happy.",
+      "They is happy.",
+      "They be happy."
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ge14",
+    "question": "Which sentence is correctly written?",
+    "choices": [
+      "I seen the movie yesterday.",
+      "I saw the movie yesterday.",
+      "I seed the movie yesterday.",
+      "I sawn the movie yesterday."
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ge15",
+    "question": "Choose the correct question form.",
+    "choices": [
+      "Where you are going?",
+      "Where are you going?",
+      "Where you going?",
+      "Where going you are?"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "gm1",
+    "question": "Choose the sentence that avoids a comma splice.",
+    "choices": [
+      "I finished my homework, I went to bed.",
+      "I finished my homework, and I went to bed.",
+      "I finished my homework I went to bed.",
+      "I finished my homework and, I went to bed."
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm2",
+    "question": "Which sentence correctly uses a semicolon?",
+    "choices": [
+      "I like tea; and coffee.",
+      "I like tea; I also like coffee.",
+      "I like tea, I also like coffee;",
+      "I like tea I also; like coffee."
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm3",
     "question": "Which sentence uses parallel structure correctly?",
-    "choices": ["She likes reading, to write, and painting.", 
-                "She likes reading, writing, and painting.", 
-                "She likes to read, writing, and to paint.", 
-                "She likes read, write, and paint."
-                ],
-    "answer": 1
+    "choices": [
+      "She likes reading, to write, and painting.",
+      "She likes reading, writing, and painting.",
+      "She likes to read, writing, and to paint.",
+      "She likes read, write, and paint."
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm4",
+    "question": "Choose the correctly punctuated sentence.",
+    "choices": [
+      "I bought apples oranges and bananas.",
+      "I bought apples, oranges, and bananas.",
+      "I bought, apples oranges and bananas.",
+      "I bought apples oranges, and bananas."
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm5",
+    "question": "Which sentence uses the correct comparative form for irregular adjectives?",
+    "choices": [
+      "This is the most best option.",
+      "This is the bestest option.",
+      "This is the best option.",
+      "This is the more best option."
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm6",
+    "question": "Choose the sentence with correct conjunction usage.",
+    "choices": [
+      "I wanted to go, but it was raining.",
+      "I wanted to go but, it was raining.",
+      "I wanted to go, but, it was raining.",
+      "I wanted to go but it, was raining."
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm7",
+    "question": "Which sentence correctly uses an apostrophe with a plural possessive?",
+    "choices": [
+      "The students books were graded.",
+      "The student's books were graded.",
+      "The students' books were graded.",
+      "The students books' were graded."
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm8",
+    "question": "Choose the sentence with the correctly placed modifier.",
+    "choices": [
+      "She almost drove her kids to school every day.",
+      "She drove her kids to school almost every day.",
+      "Almost she drove her kids to school every day.",
+      "She drove almost her kids to school every day."
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm9",
+    "question": "Which sentence correctly uses 'fewer' vs 'less'?",
+    "choices": [
+      "There are less students in this class.",
+      "There are fewer students in this class.",
+      "There are fewer of students in this class.",
+      "There is fewer students in this class."
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm10",
+    "question": "Choose the sentence with correct verb agreement using a collective subject.",
+    "choices": [
+      "Neither of the answers are correct.",
+      "Neither of the answers is correct.",
+      "Neither of the answers were correct.",
+      "Neither of the answers be correct."
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm11",
+    "question": "Which sentence correctly uses the past perfect tense?",
+    "choices": [
+      "By the time she arrived, the movie already started.",
+      "By the time she arrived, the movie had already started.",
+      "By the time she arrived, the movie has already started.",
+      "By the time she arrived, the movie was already starting."
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm12",
+    "question": "Choose the sentence with correct pronoun-antecedent agreement.",
+    "choices": [
+      "Each of the students brought their own laptop.",
+      "Each of the students brought his or her own laptop.",
+      "Each of the students brought there own laptop.",
+      "Each of the students brought they're own laptop."
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm13",
+    "question": "Which sentence correctly uses 'affect' vs 'effect'?",
+    "choices": [
+      "The weather will effect our plans.",
+      "The weather will affect our plans.",
+      "The weather will affects our plans.",
+      "The weather will affected our plans."
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm14",
+    "question": "Choose the sentence with correct use of a colon.",
+    "choices": [
+      "I need the following: eggs, milk, and bread.",
+      "I need the following, eggs, milk, and bread.",
+      "I need the following; eggs, milk, and bread.",
+      "I need the following eggs, milk, and bread."
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gm15",
+    "question": "Which sentence correctly uses the passive voice?",
+    "choices": [
+      "The committee wrote the report.",
+      "The report was wrote by the committee.",
+      "The report was written by the committee.",
+      "The report is writing by the committee."
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "gh1",
+    "question": "Which sentence avoids a dangling modifier?",
+    "choices": [
+      "Walking to school, the rain started falling.",
+      "Walking to school, I got caught in the rain.",
+      "The rain, walking to school, started falling.",
+      "Walking to school started the rain."
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh2",
+    "question": "Choose the sentence with the correct use of 'who' vs 'whom'.",
+    "choices": [
+      "Who did you give the book to?",
+      "Whom did you give the book to?",
+      "Whom you gave the book to?",
+      "Who you gave the book to?"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh3",
+    "question": "Which sentence correctly uses the subjunctive mood?",
+    "choices": [
+      "If I was rich, I would travel the world.",
+      "If I were rich, I would travel the world.",
+      "If I am rich, I would travel the world.",
+      "If I would be rich, I would travel the world."
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh4",
+    "question": "Choose the sentence that correctly uses 'lie' vs 'lay'.",
+    "choices": [
+      "I need to lay down for a while.",
+      "I need to lie down for a while.",
+      "I need to laid down for a while.",
+      "I need to lain down for a while."
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh5",
+    "question": "Which sentence avoids ambiguous pronoun reference?",
+    "choices": [
+      "When Sarah met Emma, she told her about the promotion.",
+      "Sarah told Emma about her own promotion when they met.",
+      "When Sarah met Emma, her promotion was mentioned.",
+      "She told her about the promotion, when Sarah met Emma."
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh6",
+    "question": "Choose the sentence with correct correlative conjunction usage.",
+    "choices": [
+      "She not only likes tea but also coffee.",
+      "She likes not only tea but also coffee.",
+      "Not only she likes tea but also coffee.",
+      "She likes not only tea but coffee also."
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh7",
+    "question": "Which sentence correctly uses the past subjunctive after 'wish'?",
+    "choices": [
+      "I wish I was taller.",
+      "I wish I were taller.",
+      "I wish I am taller.",
+      "I wish I will be taller."
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh8",
+    "question": "Choose the sentence with correct use of 'whoever' vs 'whomever'.",
+    "choices": [
+      "Give the prize to whoever arrives first.",
+      "Give the prize to whomever arrives first.",
+      "Give the prize to whoever it is arrives first.",
+      "Give the prize to whom arrives first."
+    ],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh9",
+    "question": "Which sentence correctly avoids a misplaced modifier?",
+    "choices": [
+      "She served sandwiches to the children on paper plates.",
+      "She served the children sandwiches on paper plates.",
+      "On paper plates, sandwiches were served to the children by her.",
+      "The children were served by her sandwiches on paper plates."
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh10",
+    "question": "Choose the sentence with correct sequence of tenses.",
+    "choices": [
+      "She said that she is coming tomorrow.",
+      "She said that she was coming tomorrow.",
+      "She said that she comes tomorrow.",
+      "She said that she has come tomorrow."
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh11",
+    "question": "Which sentence correctly uses an appositive with proper punctuation?",
+    "choices": [
+      "My brother John is a doctor.",
+      "My brother, John is a doctor.",
+      "My brother, John, is a doctor.",
+      "My brother John, is a doctor."
+    ],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh12",
+    "question": "Choose the sentence with correct use of the perfect infinitive.",
+    "choices": [
+      "He seems to have finished the project.",
+      "He seems to finished the project.",
+      "He seems to having finished the project.",
+      "He seems to has finished the project."
+    ],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh13",
+    "question": "Which sentence correctly avoids faulty parallelism in a comparison?",
+    "choices": [
+      "Swimming is more relaxing than to run.",
+      "Swimming is more relaxing than running.",
+      "To swim is more relaxing than running.",
+      "Swimming is more relaxing than a run."
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh14",
+    "question": "Choose the sentence with correct usage of 'as' vs 'like' in a formal comparison.",
+    "choices": [
+      "He works like a doctor would.",
+      "He works as a doctor would.",
+      "He works like doctor.",
+      "He works as like a doctor."
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": "gh15",
+    "question": "Which sentence correctly avoids a squinting modifier?",
+    "choices": [
+      "Students who study rarely fail the exam.",
+      "Students who rarely study fail the exam.",
+      "Rarely students who study fail the exam.",
+      "Students rarely who study fail the exam."
+    ],
+    "answer": 1,
+    "difficulty": "hard"
   }
 ]
