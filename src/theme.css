@@ -127,7 +127,16 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background: radial-gradient(
+      ellipse 80% 60% at 50% 0%,
+      rgba(124, 58, 237, 0.35) 0%,
+      rgba(88, 28, 135, 0.18) 35%,
+      #0d0b1e 70%
+    );
+    background-color: #0d0b1e;
+    min-height: 100vh;
+    background-attachment: fixed;
   }
 
   /**

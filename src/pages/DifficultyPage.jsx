@@ -30,7 +30,7 @@ export default function DifficultyPage() {
         
         <div className="header-wrapper">
           <p className="greeting-text">
-            HEY, {state.name?.trim().toUpperCase() || "EXPLORER"} 👋
+            HELLO, {state.name?.trim().toUpperCase() || "EXPLORER"}!
           </p>
           <h2 className="title-text">
             <GradientHeading>Pick a Difficulty</GradientHeading>
@@ -48,7 +48,6 @@ export default function DifficultyPage() {
                 dispatch({ type: "SET_DIFFICULTY", payload: d.id });
                 navigate("/instructions");
               }}
-              /* Keeps the structural CSS clean, passes unique theme colors dynamically if needed */
               className={`difficulty-card ${d.color || ""} ${d.border || ""}`}
             >
               <div className="card-content-wrapper">

@@ -20,7 +20,7 @@ export default function HomePage() {
           <h1 className="home-title">
             <GradientHeading>English Mastermind</GradientHeading>
           </h1>
-          <p className="home-subtitle">Test your English knowledge. Beat your score.</p>
+          <p className="home-subtitle">Test your English knowledge. Challenge your limits.</p>
         </div>
 
         <div className="home-card">

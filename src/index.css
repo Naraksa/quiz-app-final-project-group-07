@@ -1,3 +1,3 @@
 @import "tailwindcss";
-/* Both: added theme.css */
+@plugin "tailwindcss-animate";
 @import "./theme.css";
