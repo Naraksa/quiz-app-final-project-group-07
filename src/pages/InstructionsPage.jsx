@@ -4,7 +4,7 @@ import { useQuiz } from "../hooks/useQuiz.js";
 import { GradientHeading } from "../components/ui/GradientHeading";
 import { PrimaryButton } from "../components/ui/PrimaryButton";
 import { BackButton } from "../components/ui/BackButton";
-import "./InstructionsPage.css"; // <--- Clean standard CSS import
+import "./InstructionsPage.css"; 
 
 export default function InstructionsPage() {
   const navigate = useNavigate();
@@ -49,7 +49,6 @@ export default function InstructionsPage() {
         </div>
         
         <div className="instructions-header">
-          {/* Dynamically computes the custom difficulty pill backgrounds */}
           <div className={`dynamic-badge badge-wrapper-${difficultyId}`}>
             <span>{diff.emoji}</span>
             <span>{diff.label} Mode</span>
@@ -58,7 +57,7 @@ export default function InstructionsPage() {
             <GradientHeading>How to Play</GradientHeading>
           </h2>
           <p className="subtitle-text">
-            Read the rules before you jump in, {state.name?.trim() || "Explorer"}.
+            Read the rules before starting, {state.name?.trim() || "Explorer"}.
           </p>
         </div>
 
@@ -85,7 +84,7 @@ export default function InstructionsPage() {
 
           <div className="card-footer-bar">
             <p className="card-footer-text">
-              Good luck — you've got this! ✦
+              Good luck — you've got this! 
             </p>
           </div>
         </div>

@@ -1,165 +1,90 @@
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuiz } from "../hooks/useQuiz.js";
+import { useQuizData } from "../hooks/useQuizData.js";
+import { useScore } from "../hooks/useScore.js";
+import { QUIZ_TYPES, FETCH_STATUS } from "../utils/constants";
 import { GradientHeading } from "../components/ui/GradientHeading";
 import { PrimaryButton } from "../components/ui/PrimaryButton";
-import "./ResultsPage.css";
+import ScoreRing from "../components/quiz/ScoreRing.jsx";
 
-function getScoreLabel(percentage) {
-  if (percentage >= 90)
-    return { label: "Outstanding! 🏆", className: "label label--green" };
-  if (percentage >= 70)
-    return { label: "Great work! ⚡", className: "label label--yellow" };
-  if (percentage >= 50)
-    return { label: "Good effort! 💪", className: "label label--purple" };
-  return { label: "Keep practicing! 📚", className: "label label--red" };
-}
+// scoring.js only returns plain tier labels (e.g. "Keep Practicing"). The
+// exact display text/casing/emoji shown in the Figma design is a UI concern,
+// so it's mapped here rather than changing the shared scoring.js contract.
+const LABEL_DISPLAY = {
+  "Keep Practicing": "Keep practicing!",
+  "Getting There": "Getting there!",
+  "Good Job": "Good job!",
+  "Excellent": "Excellent!",
+};
 
 export default function ResultsPage() {
   const navigate = useNavigate();
   const { state, dispatch } = useQuiz();
+  const { questions: vocabQuestions, status: vocabStatus } = useQuizData(QUIZ_TYPES.VOCAB, state.difficulty);
+  const { questions: grammarQuestions, status: grammarStatus } = useQuizData(QUIZ_TYPES.GRAMMAR, state.difficulty);
 
-  const [vocabQuestions, setVocabQuestions] = useState([]);
-  const [grammarQuestions, setGrammarQuestions] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { vocabScore, grammarScore, total, percentage, label, color } = useScore(
+    vocabQuestions,
+    state.vocabAnswers,
+    grammarQuestions,
+    state.grammarAnswers
+  );
 
-  useEffect(() => {
-    Promise.all([
-      fetch("/data/vocabQuestions.json").then((res) => res.json()),
-      fetch("/data/grammarQuestions.json").then((res) => res.json()),
-    ])
-      .then(([vocab, grammar]) => {
-        setVocabQuestions(vocab);
-        setGrammarQuestions(grammar);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Failed to load quiz questions:", err);
-        setLoading(false);
-      });
-  }, []);
+  const displayLabel = LABEL_DISPLAY[label] ?? label;
 
-  if (loading) {
-    return (
-      <div className="loading-container">
-        <p className="loading-text">Loading results...</p>
-      </div>
-    );
+  if (vocabStatus === FETCH_STATUS.LOADING || grammarStatus === FETCH_STATUS.LOADING) {
+    return <p className="text-center text-sm text-muted-foreground py-12">Loading results...</p>;
   }
 
-  const vocabScore = vocabQuestions.filter(
-    (q, i) => state.vocabAnswers[i] === q.answer
-  ).length;
-
-  const grammarScore = grammarQuestions.filter(
-    (q, i) => state.grammarAnswers[i] === q.answer
-  ).length;
-
-  const totalScore = vocabScore + grammarScore;
-  const percentage = Math.round((totalScore / 30) * 100);
-  const scoreLabel = getScoreLabel(percentage);
+  const maxScore = vocabQuestions.length + grammarQuestions.length;
 
   return (
-    <div className="results-container">
-      <div className="header">
-        <p className={scoreLabel.className}>{scoreLabel.label}</p>
-
-        <h2 className="title">
-          <GradientHeading>Your Results</GradientHeading>
-        </h2>
-
-        <p className="subtitle">
-          Here's how you did, {state.name.trim()}.
-        </p>
+    <div className="flex flex-col items-center gap-7 animate-in fade-in slide-in-from-bottom-4 duration-500">
+      <div className="text-center space-y-2">
+        <p className="text-lg font-black" style={{ color }}>{displayLabel}</p>
+        <h2 className="text-4xl font-black tracking-tight"><GradientHeading>Your Results</GradientHeading></h2>
+        <p className="text-sm text-muted-foreground" style={{ fontFamily: "'Inter', sans-serif" }}>Here's how you did, {state.name.trim()}.</p>
       </div>
 
-      {/* Score Ring */}
-      <div className="score-ring">
-        <svg className="ring-svg" viewBox="0 0 144 144">
-          <circle cx="72" cy="72" r="60" className="ring-bg" />
+      <ScoreRing score={total} total={maxScore} />
 
-          <circle
-            cx="72"
-            cy="72"
-            r="60"
-            className="ring-progress"
-            strokeDasharray={`${2 * Math.PI * 60}`}
-            strokeDashoffset={`${2 * Math.PI * 60 * (1 - totalScore / 30)}`}
-          />
-
-          <defs>
-            <linearGradient id="scoreGrad">
-              <stop offset="0%" stopColor="#7c3aed" />
-              <stop offset="100%" stopColor="#6366f1" />
-            </linearGradient>
-          </defs>
-        </svg>
-
-        <div className="score-text">
-          <p className="score-number">{totalScore}</p>
-          <p className="score-outof">out of 30</p>
+      <div className="w-full rounded-2xl border border-border bg-card backdrop-blur-md overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.4)]">
+        <div className="px-6 py-4 border-b border-border flex items-center gap-3" style={{ background: "rgba(124,58,237,0.12)" }}>
+          <span className="text-xl">📊</span>
+          <span className="font-bold text-foreground tracking-wide">Score Breakdown</span>
         </div>
-      </div>
-
-      {/* Breakdown */}
-      <div className="breakdown">
-        <div className="breakdown-header">
-          <span className="emoji">📊</span>
-          <span>Score Breakdown</span>
-        </div>
-
         {[
-          { label: "Vocabulary", score: vocabScore, emoji: "🔤" },
-          { label: "Grammar", score: grammarScore, emoji: "✏️" },
+          { label: "Vocabulary", score: vocabScore, outOf: vocabQuestions.length, emoji: "🔤" },
+          { label: "Grammar", score: grammarScore, outOf: grammarQuestions.length, emoji: "✏️" },
         ].map((s) => (
-          <div key={s.label} className="breakdown-item">
-            <span className="emoji-large">{s.emoji}</span>
-
-            <div className="breakdown-content">
-              <div className="breakdown-top">
-                <span className="breakdown-label">{s.label}</span>
-                <span className="breakdown-score">
-                  {s.score} / 15
-                </span>
+          <div key={s.label} className="px-6 py-4 flex items-center gap-4 border-b border-border last:border-0">
+            <span className="text-2xl">{s.emoji}</span>
+            <div className="flex-1">
+              <div className="flex justify-between mb-1.5">
+                <span className="text-sm font-bold text-foreground">{s.label}</span>
+                <span className="text-sm font-bold text-violet-300" style={{ fontFamily: "'Inter', sans-serif" }}>{s.score} / {s.outOf}</span>
               </div>
-
-              <div className="progress-bar">
-                <div
-                  className="progress-fill"
-                  style={{ width: `${(s.score / 15) * 100}%` }}
-                />
+              <div className="h-1.5 rounded-full bg-white/10 overflow-hidden">
+                <div className="h-full rounded-full" style={{ width: `${s.outOf ? (s.score / s.outOf) * 100 : 0}%`, background: "linear-gradient(90deg, #7c3aed, #6366f1)" }} />
               </div>
             </div>
           </div>
         ))}
-
-        <div className="breakdown-total">
-          <span>Total Score</span>
-          <span>
-            {totalScore} / 30 ({percentage}%)
-          </span>
+        <div className="px-6 py-3 flex justify-between items-center" style={{ background: "rgba(167,139,250,0.06)" }}>
+          <span className="text-sm font-bold text-foreground">Total Score</span>
+          <span className="text-sm font-black text-violet-300" style={{ fontFamily: "'Inter', sans-serif" }}>{total} / {maxScore} ({percentage}%)</span>
         </div>
       </div>
 
-      <div className="actions">
+      <div className="w-full space-y-3">
+        <PrimaryButton onClick={() => { window.scrollTo(0, 0); navigate("/review"); }}>Review Answers</PrimaryButton>
         <PrimaryButton
-          onClick={() => {
-            window.scrollTo(0, 0);
-            navigate("/review");
-          }}
+          onClick={() => { dispatch({ type: "RESET" }); navigate("/"); }}
+          className="w-full py-3 rounded-xl text-sm font-semibold text-muted-foreground hover:text-foreground border border-border hover:border-violet-400/40 transition-all duration-200"
+          style={{ fontFamily: "'Inter', sans-serif" }}
         >
-          Review Answers 📋
+          ← Back to Main Menu
         </PrimaryButton>
-
-        <button
-          onClick={() => {
-            dispatch({ type: "RESET" });
-            navigate("/");
-          }}
-          className="back-button"
-        >
-          Back to Main Menu
-        </button>
       </div>
     </div>
   );

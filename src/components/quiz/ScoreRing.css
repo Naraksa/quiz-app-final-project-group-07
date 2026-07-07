@@ -1,0 +1,56 @@
+.score-ring {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+}
+
+.ring-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.ring-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.06);
+  stroke-width: 12;
+}
+
+.ring-progress {
+  fill: none;
+  stroke: url(#scoreGrad);
+  stroke-width: 12;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease;
+}
+
+.score-text {
+  text-align: center;
+}
+
+.score-number {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: var(--foreground, #f0eeff);
+  line-height: 1;
+}
+
+.score-outof {
+  font-size: 0.75rem;
+  color: var(--muted-foreground, rgba(240, 238, 255, 0.6));
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  margin-top: 0.25rem;
+}
+
+.warning-notice-text {
+    color: rgba(134, 122, 179);
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
