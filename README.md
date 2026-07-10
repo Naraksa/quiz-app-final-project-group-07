@@ -140,9 +140,9 @@ This project was split across three role-based ownership areas:
 
 | Role | Responsibility |
 |---|---|
-| **Role A** | App shell & routing |
-| **Role B** | Data & context (quiz state, question data) |
-| **Role C** | UI components, styling, and page-level architecture |
+| **Role A: VISAL Long** | App shell & routing |
+| **Role B: NARAKSA Veasna ** | Data & context (quiz state, question data) |
+| **Role C: VIRAKBOTH Kim** | UI components, styling, and page-level architecture |
 
 ## Known Issues / In Progress
 
