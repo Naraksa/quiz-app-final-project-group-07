@@ -7,9 +7,6 @@ import { GradientHeading } from "../components/ui/GradientHeading";
 import { PrimaryButton } from "../components/ui/PrimaryButton";
 import ScoreRing from "../components/quiz/ScoreRing.jsx";
 
-// scoring.js only returns plain tier labels (e.g. "Keep Practicing"). The
-// exact display text/casing/emoji shown in the Figma design is a UI concern,
-// so it's mapped here rather than changing the shared scoring.js contract.
 const LABEL_DISPLAY = {
   "Keep Practicing": "Keep practicing!",
   "Getting There": "Getting there!",
@@ -33,7 +30,7 @@ export default function ResultsPage() {
   const displayLabel = LABEL_DISPLAY[label] ?? label;
 
   if (vocabStatus === FETCH_STATUS.LOADING || grammarStatus === FETCH_STATUS.LOADING) {
-    return <p className="text-center text-sm text-muted-foreground py-12">Loading results...</p>;
+    return <p className="text-center text-sm text-muted-foreground py-12">Loading and Calculating results...</p>;
   }
 
   const maxScore = vocabQuestions.length + grammarQuestions.length;
